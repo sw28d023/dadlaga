@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+
+<div style="background-color: whitesmoke;  position: -webkit-sticky;
+position: sticky;
+top: 0;
+padding: 5px;">
+    <h3 class="b">LOGO</h3>
+    
+   
+    <span class="menu b" style="font-size:30px;cursor:pointer;float: right; margin: 6px;" onclick="openNav()">&#9776; </span>
+    <nav class="nav b">
+        <a href="#" class="a">About</a>
+        <a href="#" class="a">Services</a>
+        <a href="#" class="a">Clients</a>
+        <a href="#" class="a">Contact</a>
+    </nav>
+    <form class="example b nav" action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    
+    </form>
+    <button type="submit" onclick="ser()" class="menu"><i class="fa fa-search"></i></button>
+    <button onclick="document.getElementById('id01').style.display='block'" class="button" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container">
+      <label for="uname"  ><b>Username</b></label>
+      <input type="text" class="input" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" class="input" placeholder="Enter Password" name="psw" required>
+        
+      <button class="button" type="submit">Login</button>
+     
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+     
+    </div>
+  </form>
+</div>
+
+<script>
+
+var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</div>
+
+<div class="dis">aaaaaaaaaaaaaaaaaaaaa</div>
+<div class="dis">bbbbbbbbbbbbbbbbbbbb</div>
+<div class="dis">cccccccccccccccccccc</div>
+<div class="dis">ddddddddddddddddddddd</div>
+<p>asas</p>
+<p>asas</p>
+<p>asas</p>
+<p>asas</p>
+<p>asas</p>
+<p>asas</p>
+<p>asas</p>
+<p class="pos" >chat</p>
+<p>asas</p>
+<p>asas</p>
+<p>asas</p>
+<p>asas</p>
+<div id="my" class="sidenav ">
+    <a href="javascript:void(0)" class="closebtn" onclick="close()">&times;</a>
+    <br><br>
+    <form class="example" action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+
+<script>
+    function ser() {
+      document.getElementById("my").style.width = "100%";
+    }
+    
+    function close() {
+      document.getElementById("my").style.width = "0";
+    }
+</script>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
